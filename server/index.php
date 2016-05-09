@@ -1,6 +1,5 @@
 <?php
-
-
+require_once "config.php";
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +14,17 @@
     </video>
     <input id="start" type="button" value="Start">
     <input id="stop" type="button" value="Stop">
+    <div id="log"></div>
+    <div id="timer">
+        <span id="sec"></span>
+        <span id="diz"></span>
+        <span id="cent"></span>
+    </div>
+    <progress value="0" max="<?php echo RECORD_DURATION ?>"></progress>
     <script src="assets/js/RecordRTC.js"></script>
+    <script type="text/javascript">
+        var recordDuration = <?php echo RECORD_DURATION ?>;//en seconde
+    </script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

@@ -6,16 +6,16 @@
  * Time: 10:05
  */
 
+require_once "config.php";
+
 foreach(array('video', 'audio') as $type) {
     if (isset($_FILES["${type}-blob"])) {
 
-        define("DIR", "D:/Documents/_DEV/Confluence/crypt_os_repo/server/ress");
-
         $fileName = $_POST["${type}-filename"];
-        $uploadDirectory = DIR.'/'.$fileName;
+        $uploadDirectory = DIR.'\\'.$fileName;
 
         if (!move_uploaded_file($_FILES["${type}-blob"]["tmp_name"], $uploadDirectory)) {
-            echo(" problem moving uploaded file");
+            echo(" problem moving uploaded file " . $uploadDirectory . "  ");
         }
 
         echo($fileName);
