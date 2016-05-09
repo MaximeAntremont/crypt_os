@@ -13,7 +13,7 @@ Streamer l'image dans le navigateur de l'application.
 
 TODOS
 =
--[] Problème de synchronisation son/image du fait de l'enregistrement en deux fichiers.
+-[ ] Problème de synchronisation son/image du fait de l'enregistrement en deux fichiers.
 
 Audio record
 =
