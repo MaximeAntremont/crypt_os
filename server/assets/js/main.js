@@ -3,8 +3,8 @@
  */
 
 var body = document.querySelector("body"),
-    start_btn = document.querySelector("start"),
-    stop_btn = document.querySelector("stop"),
+    start_btn = document.querySelector("#start"),
+    stop_btn = document.querySelector("#stop"),
     video = document.querySelector("video"),
     webmVideoRecorder;
 
