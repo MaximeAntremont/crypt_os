@@ -13,5 +13,6 @@
     <video poster="./assets/img/load.gif" preload="auto" muted="muted" autoplay name="media" width="400" height="300">
         Ce navigateur ne supporte pas la vidéo...
     </video>
+    <input id="start" type="button" value="Start">
 </body>
 </html>
