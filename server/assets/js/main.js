@@ -5,7 +5,7 @@
 var body = document.querySelector("body"),
     start_btn = document.querySelector("start"),
     stop_btn = document.querySelector("stop"),
-    video = document.querySelector("video")
+    video = document.querySelector("video"),
     webmVideoRecorder;
 
 

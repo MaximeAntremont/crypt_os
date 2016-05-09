@@ -14,5 +14,7 @@
         Ce navigateur ne supporte pas la vidéo...
     </video>
     <input id="start" type="button" value="Start">
+    <input id="stop" type="button" value="Stop">
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
