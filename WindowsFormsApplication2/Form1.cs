@@ -19,9 +19,12 @@ namespace WindowsFormsApplication2
         static int lineCount = 0;
         static AxAXVLC.AxVLCPlugin2 player;
 
+
         public Form1()
         {
             InitializeComponent();
+            player = axVLCPlugin21;
+            axVLCPlugin21.MediaPlayerStopped += new EventHandler(videoEndReached);
         }
 
         static void ExecuteCommand(string command)
@@ -37,9 +40,6 @@ namespace WindowsFormsApplication2
             // *** Redirect the output ***
             processInfo.RedirectStandardError = true;
             processInfo.RedirectStandardOutput = true;
-
-            //Thread threadObj = new Thread(new ThreadStart(() => ConverToPdf("a", "b")));
-            //threadObj.Start();
 
             process.EnableRaisingEvents = true;
 
@@ -67,10 +67,18 @@ namespace WindowsFormsApplication2
             //process.Close();
         }
 
+        private static void videoEndReached(object sender, EventArgs e)
+        {
+            Console.WriteLine("End of media");
+        }
+
         private static void process_Exited(object sender, EventArgs e)
         {
             process.Dispose();
             Console.WriteLine("Bye bye!");
+            player.playlist.add("C:/Users/mediateur/Documents/Visual Studio 2013/Projects/crypt_os_ffmpeg/WindowsFormsApplication2/bin/files/cs.avi", null,null);
+            player.playlist.next();
+            player.playlist.play();
         }
 
         private static void process_OutputDataReceived(object sender, DataReceivedEventArgs e)
@@ -84,8 +92,10 @@ namespace WindowsFormsApplication2
       DateTime.Now);
             Console.WriteLine(e.Data);
             Console.WriteLine();*/
-            if(e.Data == "Press [q] to stop, [?] for help"){
+            if (e.Data == "Press [q] to stop, [?] for help")
+            {
                 Console.WriteLine("Record started !");
+                
                 player.playlist.add("udp://@127.0.0.1:1234/", "udp://@127.0.0.1:1234/", null);
                 player.playlist.play();
             }
@@ -94,7 +104,8 @@ namespace WindowsFormsApplication2
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            if(openFileDialog1.ShowDialog() == DialogResult.OK){
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
                 Console.WriteLine(openFileDialog1.FileName);
                 Console.WriteLine(openFileDialog1.SafeFileName);
                 axVLCPlugin21.playlist.add(openFileDialog1.FileName, openFileDialog1.SafeFileName, null);
@@ -103,13 +114,14 @@ namespace WindowsFormsApplication2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            axVLCPlugin21.playlist.play();
+            Console.WriteLine("Playlist");
+            Console.WriteLine(player.playlist.items);
+            player.playlist.play();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            player = axVLCPlugin21;
-            ExecuteCommand("D:/Documents/_DEV/Confluence/ffmpeg_junks/record_audio_video_avi.bat");
+            ExecuteCommand("\"C:/Users/mediateur/Documents/Visual Studio 2013/Projects/crypt_os_ffmpeg/WindowsFormsApplication2/bin/record_audio_video_avi.bat\"");
         }
     }
 }
