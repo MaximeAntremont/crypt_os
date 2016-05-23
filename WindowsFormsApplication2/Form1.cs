@@ -123,5 +123,10 @@ namespace WindowsFormsApplication2
         {
             ExecuteCommand("\"C:/Users/mediateur/Documents/Visual Studio 2013/Projects/WindowsFormsApplication2/WindowsFormsApplication2/bin/record_audio_video_avi.bat\"");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            introduction.Visible = false;
+        }
     }
 }
