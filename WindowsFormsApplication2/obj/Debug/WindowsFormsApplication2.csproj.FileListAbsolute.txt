@@ -26,3 +26,17 @@ C:\Users\mediateur\Documents\Visual Studio 2013\Projects\crypt_os_ffmpeg\Windows
 C:\Users\mediateur\Documents\Visual Studio 2013\Projects\crypt_os_ffmpeg\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 C:\Users\mediateur\Documents\Visual Studio 2013\Projects\crypt_os_ffmpeg\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\mediateur\Documents\Visual Studio 2013\Projects\crypt_os_ffmpeg\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\Interop.AXVLC.dll
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\AxInterop.AXVLC.dll
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.ResolveComReference.cache
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\Interop.AXVLC.dll
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\AxInterop.AXVLC.dll
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\mediateur\Documents\Visual Studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache

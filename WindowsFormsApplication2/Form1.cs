@@ -121,7 +121,7 @@ namespace WindowsFormsApplication2
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ExecuteCommand("\"C:/Users/mediateur/Documents/Visual Studio 2013/Projects/crypt_os_ffmpeg/WindowsFormsApplication2/bin/record_audio_video_avi.bat\"");
+            ExecuteCommand("\"C:/Users/mediateur/Documents/Visual Studio 2013/Projects/WindowsFormsApplication2/WindowsFormsApplication2/bin/record_audio_video_avi.bat\"");
         }
     }
 }
